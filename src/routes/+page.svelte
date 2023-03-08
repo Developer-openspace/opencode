@@ -1,18 +1,70 @@
-
+<script>
+    let content=[
+        {
+            name:"Management system",
+            image:"/comp-with-code.jpg",
+            alt:"image1"
+        },
+        {
+            name:"Management system",
+            image:"/sleep.jpg",
+            alt:"image2"
+        },
+        {
+            name:"Management system",
+            image:"/figure.jpg",
+            alt:"image3"
+        },
+        {
+            name:"Management system",
+            image:"/marketing.jpg",
+            alt:"image4"
+        },
+        {
+            name:"Management system",
+            image:"/minion.jpg",
+            alt:"image5"
+        },
+        {
+            name:"Management system",
+            image:"/minons1.jpg",
+            alt:"image6"
+        },
+        {
+            name:"Management system",
+            image:"/comp-with-code1.jpg",
+            alt:"image7"
+        },
+        {
+            name:"Management system",
+            image:"/comp-with-code2.jpg",
+            alt:"image8"
+        },
+        {
+            name:"Management system",
+            image:"/robo-lego.jpg",
+            alt:"image9"
+        },
+        {
+            name:"Management system",
+            image:"/comp-with-code4.jpg",
+            alt:"image10"
+        },
+        {
+            name:"Management system",
+            image:"/comp-with-code3.jpg",
+            alt:"image11"
+        },
+    ]
+</script>
 <svelte:head>
     <title>Open code | Home</title>
 </svelte:head>
 
 <main class="m-6 text-lg flex justify-center">
-    <div class="grid grid-cols-1 sm:grid-cols-3">
-        <img src="/comp-with-code.jpg" class="w-25 " alt="image1"/>
-        <img src="/sleep.jpg" class="w-25 " alt="image2"/>
-        <img src="/figure.jpg" class="w-25 " alt="image3"/>
-        <img src="/marketing.jpg" class="w-25 " alt="image4"/>
-        <img src="/minion.jpg" class="w-25 " alt="image5"/>
-        <img src="/minons1.jpg" class="w-25 " alt="image6"/>
-        <img src="" alt=""/>
-        <img src="" alt=""/>
-
+    <div class=" grid-cols-1 sm:columns-3 sm:gap-2">
+        {#each content as item }
+            <img src={item.image} class="w-full mb-6" alt={item.alt}/>
+        {/each}
     </div>
 </main>
