@@ -1,0 +1,18 @@
+{
+	"/": [],
+	"/about": [],
+	"/add": [],
+	"/api/add": [
+		"src/routes/api/add/+server.js"
+	],
+	"/api/random-number": [
+		"src/routes/api/random-number/+server.js"
+	],
+	"/blog/[slug]": [
+		"src/routes/blog/[slug]/+page.js"
+	],
+	"/settings": [
+		"src/routes/settings/+layout.js",
+		"src/routes/settings/+layout.js"
+	]
+}
