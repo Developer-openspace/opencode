@@ -1,7 +1,6 @@
-// import { get } from "svelte/store"
+import {content} from "../../../lib/db/data";
+import {json} from "@sveltejs/kit";
 
-// export get(){
-//     return {
-        
-//     }
-// }
+export function GET(){
+    return json(content);
+}
