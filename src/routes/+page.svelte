@@ -1,5 +1,5 @@
 <script>
-    /** @type {import('./$types').PageServerData} */  
+    /** @type {import('./$types').PageData} */  
     export let data;
 </script>
 
@@ -9,7 +9,7 @@
 
 <main class="m-6 text-lg flex justify-center">
     <div class="grid-cols-1 sm:columns-3 sm:gap-2">
-        {#each data.content as item }
+        <!-- {#each data.content as item }
             <div class="mb-16">
                 <a href={`/project/${item.image}`} >
                     <img src={item.image} class="w-full rounded-[15px] shadow-lg" alt={item.alt}/>
@@ -19,6 +19,7 @@
                     </div>
                 </a>
             </div>
-        {/each}
+        {/each} -->
+        <p>{data}</p>
     </div>
 </main>
