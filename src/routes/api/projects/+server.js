@@ -1,4 +1,3 @@
-import {content} from "$lib/db/data";
 import {projects} from "$lib/mongodb/models/project_model";
 import {json} from "@sveltejs/kit";
 
