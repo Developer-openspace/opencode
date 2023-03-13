@@ -14,10 +14,12 @@ export async function POST({request}){
     const image=item.get('image');
     const name=item.get('name');
     const desc=item.get('desc');
+    const count =await projects.countDocuments({}) +1;
     const insertProject=await projects.insertOne({
         image, 
         name,
-        desc
+        desc,
+        count:`projectId_${count}`
     })
-    return json(insertProject,{status:201});
+    return json({msg:"Project added"},{status:201});
 }

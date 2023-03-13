@@ -1,9 +1,18 @@
-import * as db from "$lib/db/data.js";
+import { projects } from "$lib/mongodb/models/project_model";
 import {json} from "@sveltejs/kit";
 
-export function GET(requestEvent){
+//get project
+export async function GET(requestEvent){
     const {params}=requestEvent;
     const {id}=params;
-    const project=db.content[id];
+    const project=await projects.findOne({count:id});
     return json(project);
+}
+
+//delete project
+export async function DELETE(RequestEvent){
+    const {params}=RequestEvent;
+    const {id}=params;
+    await projects.findOneAndDelete({count:id});
+    return json({msg:"Project was deleted"})
 }
