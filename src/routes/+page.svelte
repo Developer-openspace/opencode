@@ -11,7 +11,7 @@
     <div class="grid-cols-1 sm:columns-3 sm:gap-2">
         {#each data.parseRes as item, index }
             <div class="mb-16">
-                <a href={`/project/${index}`} >
+                <a href={`/projects/${index}`} >
                     <img src={item.image} class="w-full rounded-[15px] shadow-lg" alt={item.alt}/>
                     <div class="mt-[-80px] h-[30px] text-gray-100 ml-8">
                         <p class="text-xl font-semibold">{item.name}</p>
