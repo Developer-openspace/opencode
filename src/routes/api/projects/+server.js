@@ -9,10 +9,14 @@ export async function GET(){
 
 //post (add project to db)
 export async function POST({request}){
-    const item=await request.formData();
-    const image=item.get('image');
-    const name=item.get('name');
-    const desc=item.get('desc');
+    // const item=await request.formData();
+    // const image=item.get('image');
+    // const name=item.get('name');
+    // const desc=item.get('desc');
+    const item=await request.body;
+    const image=item?.getReader('image');
+    const name=item?.getReader('name');
+    const desc=item?.getReader('desc');
     const count =await projects.countDocuments({}) +1;
     const insertProject=await projects.insertOne({
         image, 
