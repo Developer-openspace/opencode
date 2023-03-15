@@ -13,12 +13,9 @@ export async function POST({request}){
     // const image=item.get('image');
     // const name=item.get('name');
     // const desc=item.get('desc');
-    const item=await request.body;
-    const image=item?.getReader('image');
-    const name=item?.getReader('name');
-    const desc=item?.getReader('desc');
+    const {image,name,desc}=await request.json();
     const count =await projects.countDocuments({}) +1;
-    const insertProject=await projects.insertOne({
+    await projects.insertOne({
         image, 
         name,
         desc,
