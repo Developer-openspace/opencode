@@ -6,15 +6,15 @@
         <div class="flex justify-around max-sm:flex-col items-center my-10">
             <div class="mx-9">
                 <p class="text-xl text-slate-500 font-semibold">Explore</p>
-                <p class="text-lg max-sm:w-[70vw] max-sm:mb-7 w-[20vw]">Scroll throught the available projects, find a project of your liking.</p>
+                <p class="text-lg max-sm:w-[70vw] max-sm:mb-7 w-[20vw]">Scroll through the available projects, find a project of your liking.</p>
             </div> 
             <div class="mx-9">
                 <p class="text-xl text-slate-500 font-semibold">Discover</p>
-                <p class="text-lg max-sm:w-[70vw] max-sm:mb-7 w-[20vw]">After finding a project, read about its details and if its suits in your research or work.</p>
+                <p class="text-lg max-sm:w-[70vw] max-sm:mb-7 w-[20vw]">After finding a project, read its details and see if it fits in your research or work.</p>
             </div> 
             <div class="mx-9">
                 <p class="text-xl text-slate-500 font-semibold">Download</p>
-                <p class="text-lg max-sm:w-[70vw] max-sm:mb-7 w-[20vw]">Purchase the project if is a paid project or if its a free project. Download the project.</p>
+                <p class="text-lg max-sm:w-[70vw] max-sm:mb-7 w-[20vw]">Then, download the project.</p>
             </div>
         </div>
     </div>

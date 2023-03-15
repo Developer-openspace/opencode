@@ -4,7 +4,7 @@
         <div class="flex flex-col">
             <p class="font-bold mb-2 text-3xl">OpenCode</p>
             <p class="sm:w-[20vw]">
-                Get Access to a wide variety of projects, including machine learning projects and data science.
+                Get Access to wide varieties of projects, including machine learning projects and data science.
             </p>
         </div>
         <div class="flex flex-col max-sm:mt-7">
