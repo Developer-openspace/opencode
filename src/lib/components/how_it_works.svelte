@@ -1,5 +1,5 @@
 
-<main class="flex justify-center bg-gray-100 py-6">
+<main class="flex justify-center bg-gray-100 py-14">
     <div class="flex flex-col items-center">
         <p class="text-center text-3xl text-slate-700 font-bold">How it works</p>
         <p class="text-center m-3 text-lg max-sm:w-[80vw] w-[50vw]">This is the website you wish you knew earlier. In here, you get a lot of free and paid resources that will help your in your learning.</p>
