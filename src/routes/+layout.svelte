@@ -6,7 +6,7 @@ import "./app.css"
 <nav class="p-5 text-xl shadow flex justify-between">
     <div class="flex">
         <img src="/open-code.png" class="w-10 h-7 rounded-sm shadow-sm mr-2" alt="logo"/>
-        <a class="mx-2" href="/">Explore</a>
+        <a class="mx-2" href="/explore">Explore</a>
         <a class="mx-2" href="/about">About</a>
         <a class="mx-2" href="/projects/add">Add</a>
         <a class="mx-2" href="/sign_in">Sign in</a>
