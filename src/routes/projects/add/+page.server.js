@@ -1,6 +1,6 @@
 import {projects} from "$lib/mongodb/models/project_model";
 import {json} from "@sveltejs/kit";
-import { projectStorage,ref,getDownloadURL,uploadBytesResumable,deleteObject } from "/firebase/firebaseConfig";
+import { projectStorage,ref,getDownloadURL,uploadBytesResumable,deleteObject } from "$lib/firebase/firebaseConfig";
 /** @type {import('./$types').PageServerData} */
 
 // export function load({fetch}) {
