@@ -1,5 +1,5 @@
 <script>
-
+    import Footer from "$lib/components/footer.svelte"
 </script>
 <svelte:head>
     <title>Open code | Home</title>
@@ -11,6 +11,8 @@
             <p><span class="text-slate-500">science</span> projects.</p>
         </div>
         <p class="text-center text-slate-700 text-lg max-sm:w-[70vw]">Built for students, explore and download free and paid projects easily.</p>
-        <a href="" class="m-5 p-2 hover: bg-slate-500 text-white rounded-md capitalize">View all projects</a>        
+        <a href="/explore" class="m-5 p-2 text-base hover:text-slate-500 hover:bg-white hover:border-2 bg-slate-500 text-white rounded-md capitalize">View all projects</a>        
    </div>
 </main>
+
+<Footer/>
