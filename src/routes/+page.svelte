@@ -6,8 +6,8 @@
 <svelte:head>
     <title>Open code | Home</title>
 </svelte:head>
-<main class="text-xl bg-[url('/comp-with-code.jpg')] bg-cover max-sm:bg-center py-5 flex flex-col items-center max-sm:h-[60vh] h-[80vh]">
-   <div class="flex flex-col bg-[rgba(0,0,0,0.5)] rounded-md p-3 items-center mt-[7rem]">
+<main class="text-xl bg-[url('/comp-with-code.jpg')] bg-cover max-sm:bg-center py-5 flex flex-col items-center justify-center h-[80vh]">
+   <div class="flex flex-col bg-[rgba(0,0,0,0.5)] rounded-md p-3 items-center">
         <div class="text-center text-white text-xl font-medium sm:text-3xl uppercase mb-3">
             <p>OpenCode provides Access to different <span class="text-slate-500">Computer</span></p>
             <p><span class="text-slate-500">science</span> projects.</p>
