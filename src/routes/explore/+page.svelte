@@ -9,7 +9,7 @@
 
 <main class="m-6 text-lg flex justify-center">
     <div class="grid-cols-1 sm:columns-3 sm:gap-2">
-        {#each data.projects as item }
+        {#each data.parseRes as item }
             <div class="mb-16">
                 <a href={`/projects/${item.count}`} >
                     <img src={item.image} class="w-full rounded-[15px] shadow-lg" alt={item.alt}/>
