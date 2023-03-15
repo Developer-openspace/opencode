@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-    <title>Open code | Home</title>
+    <title>Open code | Explore</title>
 </svelte:head>
 
 <main class="m-6 text-lg flex justify-center">

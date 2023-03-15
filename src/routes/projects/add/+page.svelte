@@ -3,6 +3,10 @@
      export let data;
 </script>
 
+<svelte:head>
+    <title>Open code | Add Project</title>
+</svelte:head>
+
 <main class="flex flex-col items-center justify-center">
     <form method="POST" class="flex flex-col my-10 text-lg w-[90%] sm:w-[70%]" action="/projects/add">
         <label>Name</label>

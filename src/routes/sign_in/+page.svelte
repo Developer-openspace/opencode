@@ -2,6 +2,10 @@
 
 </script>
 
+<svelte:head>
+    <title>Open code | Sign in</title>
+</svelte:head>
+
 <main class="flex flex-col items-center justify-center">
     <form method="POST" class="flex flex-col my-10 text-lg w-[90%] sm:w-[70%]" action="/api/projects">
         <h1 class="text-[40px] font-extrabold mb-10 text-slate-800">Welcome back</h1>
