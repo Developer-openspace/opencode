@@ -17,4 +17,5 @@
    </div>
 </main>
 <HowItWorks/>
+<ProjectSlider/>
 <Footer/>
