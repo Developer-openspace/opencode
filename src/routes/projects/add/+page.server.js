@@ -1,24 +1,23 @@
-// @ts-ignore
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
-// @ts-ignore
-import{getStorage,ref,getDownloadURL,uploadBytesResumable,deleteObject} from "https://www.gstatic.com/firebasejs/9.17.1/firebase-storage.js";
-import {API_KEY, AUTH_DOMAIN, PROJECT_ID, STORAGE_BUCKET, MESS_ID, APP_ID, MEASURE_ID} from "$env/static/private";
+import {projects} from "$lib/mongodb/models/project_model";
+import {json} from "@sveltejs/kit";
+import { projectStorage,ref,getDownloadURL,uploadBytesResumable,deleteObject } from "/firebase/firebaseConfig";
 /** @type {import('./$types').PageServerData} */
 
-export function load() {
-  const firebaseConfig = {
-      apiKey: API_KEY,
-      authDomain: AUTH_DOMAIN,
-      projectId: PROJECT_ID,
-      storageBucket: STORAGE_BUCKET,
-      messagingSenderId: MESS_ID,
-      appId: APP_ID,
-      measurementId: MEASURE_ID
-    };
+// export function load({fetch}) {
   
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const projectStorage=getStorage(app);
-  
-  return { projectStorage,ref,getDownloadURL,uploadBytesResumable,deleteObject}
+// }
+
+export async function POST({request}){
+    const item=await request.formData();
+    const image=item.get('image');
+    const name=item.get('name');
+    const desc=item.get('desc');
+    const count =await projects.countDocuments({}) +1;
+    await projects.insertOne({
+        image, 
+        name,
+        desc,
+        count:`projectId_${count}`
+    })
+    return json({msg:"Project added"},{status:201});
 }
