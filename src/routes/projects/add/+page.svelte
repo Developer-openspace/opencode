@@ -1,5 +1,12 @@
 <script>
-
+     /** @type {import('./$types').PageData} */  
+     export let data;
+    const {
+        projectStorage,
+        ref,getDownloadURL,
+        uploadBytesResumable,
+        deleteObject
+    } =data;
 </script>
 
 <main class="flex flex-col items-center justify-center">
