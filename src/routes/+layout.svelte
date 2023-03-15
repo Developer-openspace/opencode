@@ -1,6 +1,6 @@
 <script>
     import { assets } from "$app/paths";
-import "./app.css"
+    import "./app.css"
 </script>
 
 <nav class="p-5 text-xl shadow flex justify-between">
