@@ -1,10 +1,21 @@
-import {projects} from "$lib/mongodb/models/project_model";
+import { octokit } from "$lib/octokit/octokit";
 import {json} from "@sveltejs/kit";
 
 //get all projects
 export async function GET(){
-    const allProjects=await projects.find({}).toArray()
-    return json(allProjects);
+    try {
+        const result = await octokit.request("GET /repos/{owner}/{repo}/issues", {
+            owner: "octocat",
+            repo: "Spoon-Knife",
+          });
+      
+        const titleAndAuthor = result.data.map(issue => {title: issue.title, authorID: issue.user.id})
+      
+        console.log(titleAndAuthor)
+      
+      } catch (error) {
+        console.log(`Error! Status: ${error.status}. Message: ${error.response.data.message}`)
+    }
 }
 
 //post (add project to db)
