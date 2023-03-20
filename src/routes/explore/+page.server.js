@@ -3,7 +3,7 @@ import { error } from '@sveltejs/kit';
 /** @type {import('../$types').PageServerData} */
 
 export async function load({fetch}) {
-  const url=`/api/projects`;
+  const url=`/api/repos`;
   const response=await fetch(url);
   const parseRes=await response.json();
   return { parseRes }
