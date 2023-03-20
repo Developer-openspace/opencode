@@ -22,6 +22,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"mongodb": "^5.1.0"
+		"mongodb": "^5.1.0",
+		"octokit": "^2.0.14"
 	}
 }
