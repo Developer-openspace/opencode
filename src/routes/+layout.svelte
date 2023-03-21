@@ -10,7 +10,6 @@
     </div>
     <div class="sm:flex none">
         <a class="mx-2" href="/explore">Explore</a>
-        <a class="mx-2" href="/projects/add">Add</a>
         <a class="mx-2" href="/sign_in">Sign in</a>
         <a class="ml-4 px-2 py-1 text-base text-white rounded-md border-slate-600 bg-slate-500 " href="/get_started">Get Started</a>
     </div>
