@@ -1,7 +1,7 @@
 import {Octokit} from "octokit";
-import {GITHUB_TOKEN} from "$env/static/private";
+import { GITHUB_TOKEN } from "$env/static/private";
 
 export const octokit = new Octokit({
-    auth: process.env.GITHUB_TOKEN
+    auth:GITHUB_TOKEN
   });
   
