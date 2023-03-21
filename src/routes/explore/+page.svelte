@@ -11,7 +11,8 @@
     <div class="grid-cols-1 sm:columns-3 sm:gap-2">
         {#each data.parseRes as item }
             <div class="mb-6 bg-slate-600 rounded-[15px] pb-4 shadow-lg" id={item.id}>
-                <img src={`https://ui-avatars.com/api/?name=${item.name}`} class="w-full rounded-tr-[15px] rounded-tl-[15px]" alt={item.alt}/>
+            <!-- https://opengraph.githubassets.com/1f3977f37995637ee111830aa8ae02d8c0ac6838db385a43e9009b4a84708f47/imrany/opencode -->
+                <img src={`https://opengraph.githubassets.com/1f3977f37995637ee111830aa8ae02d8c0ac6838db385a43e9009b4a84708f47/${item.full_name}`} class="w-full rounded-tr-[15px] rounded-tl-[15px]" alt={item.alt}/>
                 <div class=" text-gray-100 ml-8">
                     <p class="mt-3 text-xl font-semibold">{item.full_name}</p>
                     <p class="text-lg">{item?.description==null?"":item.description}</p>
