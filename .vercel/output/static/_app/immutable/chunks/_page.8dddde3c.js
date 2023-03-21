@@ -1,0 +1,1 @@
+new TextEncoder;async function o({fetch:e}){return{parseRes:await(await e("/api/repos")).json()}}const t=Object.freeze(Object.defineProperty({__proto__:null,load:o},Symbol.toStringTag,{value:"Module"}));export{t as _,o as l};
