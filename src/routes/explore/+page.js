@@ -1,4 +1,3 @@
-import { error } from '@sveltejs/kit';
 export const config = {
   runtime: 'edge',
 };
@@ -6,10 +5,18 @@ export const config = {
 /** @type {import('../$types').PageData} */
 
 export async function load({fetch}) {
+ try {
   const url=`/api/repos`;
   const response=await fetch(url);
   const parseRes=await response.json();
-  return { parseRes }
+  if(parseRes.error){
+    console.log(parseRes.error)  
+  }else{
+    return { parseRes }
+  }
 
-  throw error(404, 'Not found');
+ } catch (error) {
+  // @ts-ignore
+  console.log(error.message);
+ }
 }

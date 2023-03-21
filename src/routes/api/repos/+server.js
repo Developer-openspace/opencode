@@ -15,6 +15,6 @@ export async function GET(){
       
       } catch (error) {
         // @ts-ignore
-        console.log(`Error! Status: ${error.status}. Message: ${error.response.data.message}`)
+        return json({error:`Error! Status: ${error.status}. Message: ${error.response.data.message}`})
     }
 }
