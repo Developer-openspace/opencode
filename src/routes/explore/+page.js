@@ -1,5 +1,8 @@
 import { error } from '@sveltejs/kit';
- 
+export const config = {
+  runtime: 'edge',
+};
+
 /** @type {import('../$types').PageData} */
 
 export async function load({fetch}) {
