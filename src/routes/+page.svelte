@@ -12,7 +12,7 @@
             <p>OpenCode provides Access to different <span class="text-slate-500">Computer</span></p>
             <p><span class="text-slate-500">science</span> projects.</p>
         </div> 
-        <p class="text-center text-white text-lg font-bold max-sm:w-[70vw]">Built for students, explore and download free and paid projects with ease.</p>
+        <p class="text-center text-white text-lg font-bold max-sm:w-[70vw]">Built for students, to explore and download free and paid projects with ease.</p>
         <a href="/explore" class="m-5 p-2 text-base hover:text-slate-500 hover:bg-white hover:border-2 bg-slate-500 text-white rounded-md capitalize">View all projects</a>        
    </div>
 </main>
