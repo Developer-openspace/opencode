@@ -6,9 +6,6 @@ export async function GET(){
     try {
         const result = await octokit.request("GET /users/{owner}/repos", {
             owner: "imrany",
-            headers: {
-                'X-GitHub-Api-Version': '2022-11-28'
-              }
           });
       
         return json(result.data)
